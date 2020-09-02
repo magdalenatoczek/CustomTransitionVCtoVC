@@ -1,24 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--FirstVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FirstVC" customModule="CustomTransitionsVCtoVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yj-31-sec">
+                                <rect key="frame" x="107" y="641" width="200" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="RCa-rm-zvl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                <state key="normal" title="Show new VC">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToNewVcPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awF-a1-wjV"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KfD-Hn-C05">
+                                <rect key="frame" x="20" y="10" width="374" height="621"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="q8q-QL-FeF">
+                                    <size key="itemSize" width="115" height="113"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollVCCell" id="C3q-Fx-ftt" customClass="CollVCCell" customModule="CustomTransitionsVCtoVC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="113"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7E3-Al-sXv">
+                                            <rect key="frame" x="0.0" y="0.0" width="115" height="113"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2or-EN-xjh">
+                                                    <rect key="frame" x="5" y="5" width="105" height="103"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.77062884799999998" blue="0.31747231949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="2or-EN-xjh" secondAttribute="trailing" constant="5" id="D1K-d2-cxv"/>
+                                                <constraint firstAttribute="bottom" secondItem="2or-EN-xjh" secondAttribute="bottom" constant="5" id="kVn-hk-k7F"/>
+                                                <constraint firstItem="2or-EN-xjh" firstAttribute="leading" secondItem="7E3-Al-sXv" secondAttribute="leading" constant="5" id="rTZ-WB-7wB"/>
+                                                <constraint firstItem="2or-EN-xjh" firstAttribute="top" secondItem="7E3-Al-sXv" secondAttribute="top" constant="5" id="xQj-vH-7Ii"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="115" height="113"/>
+                                        <connections>
+                                            <outlet property="cellLabel" destination="2or-EN-xjh" id="RDX-Lr-2Pb"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.77062884797666742" blue="0.31747231953222743" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Yj-31-sec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Px-ia-Nze"/>
+                            <constraint firstItem="2Yj-31-sec" firstAttribute="top" secondItem="KfD-Hn-C05" secondAttribute="bottom" constant="10" id="dsw-Qg-7Nw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Yj-31-sec" secondAttribute="bottom" constant="50" id="gVH-aN-RZD"/>
+                            <constraint firstItem="KfD-Hn-C05" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="mXE-vl-3zj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KfD-Hn-C05" secondAttribute="trailing" constant="20" id="rPX-o7-dk3"/>
+                            <constraint firstItem="KfD-Hn-C05" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uRc-zI-POq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="KfD-Hn-C05" id="A5B-pZ-Qpi"/>
+                        <outlet property="goToNewVCBtn" destination="2Yj-31-sec" id="Kdr-Nc-IFd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="123.91304347826087"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="HKa-xx-KXD">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" id="NtO-1P-THF" customClass="SecondVC" customModule="CustomTransitionsVCtoVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eqB-u5-ehJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CD8-V0-nPl">
+                                <rect key="frame" x="132" y="641" width="150" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="A6e-a4-Xvb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                <state key="normal" title="go back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBackBtnPressed:" destination="NtO-1P-THF" eventType="touchUpInside" id="kPq-eg-Io8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.69926067305650341" blue="0.44859261633885117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CD8-V0-nPl" firstAttribute="centerX" secondItem="eqB-u5-ehJ" secondAttribute="centerX" id="GCP-qC-3ex"/>
+                            <constraint firstItem="ZCT-7k-COg" firstAttribute="bottom" secondItem="CD8-V0-nPl" secondAttribute="bottom" constant="50" id="O0M-vK-PeM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZCT-7k-COg"/>
+                    </view>
+                    <connections>
+                        <outlet property="goBackBtn" destination="CD8-V0-nPl" id="0Sr-De-gH0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="thp-zU-UJE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840" y="124"/>
         </scene>
     </scenes>
 </document>
