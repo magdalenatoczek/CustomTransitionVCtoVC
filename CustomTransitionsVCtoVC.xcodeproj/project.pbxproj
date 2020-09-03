@@ -14,6 +14,8 @@
 		AA33F93F24FFEDF500B434DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA33F93E24FFEDF500B434DD /* Assets.xcassets */; };
 		AA33F94224FFEDF500B434DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA33F94024FFEDF500B434DD /* LaunchScreen.storyboard */; };
 		AA33F94A24FFEF2A00B434DD /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33F94924FFEF2A00B434DD /* SecondVC.swift */; };
+		AA3B1F8A25010D8B000BC0D4 /* AnimatorFromCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B1F8925010D8B000BC0D4 /* AnimatorFromCenter.swift */; };
+		AA3B1F8C25011245000BC0D4 /* AnimatorToCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B1F8B25011245000BC0D4 /* AnimatorToCenter.swift */; };
 		AA78CAD724FFF46F00C7497A /* CollVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78CAD624FFF46F00C7497A /* CollVCCell.swift */; };
 		AA78CAD924FFF60400C7497A /* DataEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78CAD824FFF60400C7497A /* DataEnum.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,8 @@
 		AA33F94124FFEDF500B434DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA33F94324FFEDF500B434DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA33F94924FFEF2A00B434DD /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		AA3B1F8925010D8B000BC0D4 /* AnimatorFromCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorFromCenter.swift; sourceTree = "<group>"; };
+		AA3B1F8B25011245000BC0D4 /* AnimatorToCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorToCenter.swift; sourceTree = "<group>"; };
 		AA78CAD624FFF46F00C7497A /* CollVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollVCCell.swift; sourceTree = "<group>"; };
 		AA78CAD824FFF60400C7497A /* DataEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +66,7 @@
 		AA33F93424FFEDF300B434DD /* CustomTransitionsVCtoVC */ = {
 			isa = PBXGroup;
 			children = (
+				AA3B1F8D250117F9000BC0D4 /* Animators */,
 				AA78CAD624FFF46F00C7497A /* CollVCCell.swift */,
 				AA78CAD824FFF60400C7497A /* DataEnum.swift */,
 				AA33F94B24FFEF3000B434DD /* ViewController */,
@@ -82,6 +87,15 @@
 				AA33F94924FFEF2A00B434DD /* SecondVC.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AA3B1F8D250117F9000BC0D4 /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B1F8B25011245000BC0D4 /* AnimatorToCenter.swift */,
+				AA3B1F8925010D8B000BC0D4 /* AnimatorFromCenter.swift */,
+			);
+			path = Animators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,11 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3B1F8C25011245000BC0D4 /* AnimatorToCenter.swift in Sources */,
 				AA78CAD724FFF46F00C7497A /* CollVCCell.swift in Sources */,
 				AA33F93A24FFEDF300B434DD /* FirstVC.swift in Sources */,
 				AA33F93624FFEDF300B434DD /* AppDelegate.swift in Sources */,
 				AA33F94A24FFEF2A00B434DD /* SecondVC.swift in Sources */,
 				AA78CAD924FFF60400C7497A /* DataEnum.swift in Sources */,
+				AA3B1F8A25010D8B000BC0D4 /* AnimatorFromCenter.swift in Sources */,
 				AA33F93824FFEDF300B434DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

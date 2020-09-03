@@ -16,21 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yj-31-sec">
-                                <rect key="frame" x="107" y="641" width="200" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="RCa-rm-zvl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
-                                <state key="normal" title="Show new VC">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="goToNewVcPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awF-a1-wjV"/>
-                                </connections>
-                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KfD-Hn-C05">
-                                <rect key="frame" x="20" y="10" width="374" height="621"/>
+                                <rect key="frame" x="20" y="10" width="374" height="716"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="q8q-QL-FeF">
                                     <size key="itemSize" width="115" height="113"/>
@@ -48,7 +35,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2or-EN-xjh">
                                                     <rect key="frame" x="5" y="5" width="105" height="103"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -71,9 +58,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.77062884797666742" blue="0.31747231953222743" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2Yj-31-sec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Px-ia-Nze"/>
-                            <constraint firstItem="2Yj-31-sec" firstAttribute="top" secondItem="KfD-Hn-C05" secondAttribute="bottom" constant="10" id="dsw-Qg-7Nw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Yj-31-sec" secondAttribute="bottom" constant="50" id="gVH-aN-RZD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KfD-Hn-C05" secondAttribute="bottom" constant="10" id="Gpa-5d-huC"/>
                             <constraint firstItem="KfD-Hn-C05" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="mXE-vl-3zj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KfD-Hn-C05" secondAttribute="trailing" constant="20" id="rPX-o7-dk3"/>
                             <constraint firstItem="KfD-Hn-C05" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uRc-zI-POq"/>
@@ -82,7 +67,6 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="KfD-Hn-C05" id="A5B-pZ-Qpi"/>
-                        <outlet property="goToNewVCBtn" destination="2Yj-31-sec" id="Kdr-Nc-IFd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

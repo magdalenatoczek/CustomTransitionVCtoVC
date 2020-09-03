@@ -12,13 +12,13 @@ import Foundation
 
 enum DataEnum : String {
     
-    case one = "whatever"
-    case two = "lalal"
-    case three = "bulbul"
-    case four = "bulbfsdfl"
-    case five = "budfdbul"
-    case six = "bufjshfjkhsdfjkhsjfhlfdfbul"
-    case seven = "buldfdfbul"
+    case one = "modal default"
+    case two = "modal fullScreen"
+    case three = "coverVertical"
+    case four = "flip horizontal"
+    case five = "crossDissolve"
+    case six = "from center"
+    case seven = "to center"
     
     
     

@@ -15,8 +15,8 @@ class CollVCCell: UICollectionViewCell {
     @IBOutlet weak var cellLabel: UILabel!
     
     
-    
-    
+ 
+
     
     
     
