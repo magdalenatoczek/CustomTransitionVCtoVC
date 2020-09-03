@@ -12,15 +12,20 @@ import Foundation
 
 enum DataEnum : String {
     
-    case one = "modal default"
-    case two = "modal fullScreen"
-    case three = "coverVertical"
-    case four = "flip horizontal"
-    case five = "crossDissolve"
-    case six = "from center"
-    case seven = "to center"
+    case modal_default = "modal default"
+    case fullScreen = "modal fullScreen"
+    case coverVertical = "cover Vertical"
+    case flipHorizontal = "flip horizontal"
+    case crossDissolve = "cross Dissolve"
+    case fromCenter = "from center"
+    case toCenter = "to center"
+    case disappear = "disappear"
+    case fromCell = "from Cell"
+    
+    
+    static let data = [flipHorizontal.rawValue, crossDissolve.rawValue, fromCenter.rawValue, toCenter.rawValue, disappear.rawValue, modal_default.rawValue, fullScreen.rawValue, coverVertical.rawValue, fromCell.rawValue]
     
     
     
-    static let data = [one.rawValue, two.rawValue, three.rawValue, four.rawValue, five.rawValue, six.rawValue, seven.rawValue]
+    
 }

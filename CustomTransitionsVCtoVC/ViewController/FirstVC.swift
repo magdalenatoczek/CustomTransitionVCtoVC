@@ -13,7 +13,8 @@ class FirstVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var transitionOption = DataEnum.one
+    var transitionOption = DataEnum.modal_default
+    var cellFrame = CGRect(x: 0, y: 0, width: 10, height: 10)
     
   
     
@@ -55,59 +56,81 @@ class FirstVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-   
+        if let frame = collectionView.cellForItem(at: indexPath)?.frame {
+            cellFrame = frame
+        }
+        
+        
+        print(cellFrame)
      let option = DataEnum.data[indexPath.row]
        
   
         switch option {
-        case DataEnum.one.rawValue:
+        case DataEnum.fromCell.rawValue:
+                               let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
+                               transitionOption = DataEnum.fromCell
+                               vc?.transitioningDelegate = self
+                               vc?.modalPresentationStyle = .fullScreen
+                               present(vc!, animated: true, completion: nil)
+                               break
+       
+        case DataEnum.modal_default.rawValue:
             
                     let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
-                    transitionOption = DataEnum.one
+                    transitionOption = DataEnum.modal_default
                     present(vc!, animated: true, completion: nil)
                     break
-        case DataEnum.two.rawValue:
+        case DataEnum.fullScreen.rawValue:
                     let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
                     vc?.modalPresentationStyle = .fullScreen
-                    transitionOption = DataEnum.two
+                    transitionOption = DataEnum.fullScreen
                     present(vc!, animated: true, completion: nil)
                     break
-        case DataEnum.three.rawValue:
+        case DataEnum.coverVertical.rawValue:
                     let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
-                    transitionOption = DataEnum.three
+                    transitionOption = DataEnum.coverVertical
                     vc?.modalPresentationStyle = .fullScreen
                     vc?.modalTransitionStyle = .coverVertical
                     present(vc!, animated: true, completion: nil)
                    
                     break
-        case DataEnum.four.rawValue:
+        case DataEnum.flipHorizontal.rawValue:
                      let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
                      vc?.modalPresentationStyle = .fullScreen
-                     transitionOption = DataEnum.four
+                     transitionOption = DataEnum.flipHorizontal
                      vc?.modalTransitionStyle = .flipHorizontal
                      present(vc!, animated: true, completion: nil)
                      break
-        case DataEnum.five.rawValue:
+        case DataEnum.crossDissolve.rawValue:
                       let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
                       vc?.modalTransitionStyle = .crossDissolve
-                    transitionOption = DataEnum.five
+                    transitionOption = DataEnum.crossDissolve
                       present(vc!, animated: true, completion: nil)
                       break
-        case DataEnum.six.rawValue:
+        case DataEnum.fromCenter.rawValue:
                         let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
                         vc?.transitioningDelegate = self
-                          transitionOption = DataEnum.six
+                          transitionOption = DataEnum.fromCenter
                         vc?.modalPresentationStyle = .fullScreen
                         present(vc!, animated: true, completion: nil)
                                break
         
-        case DataEnum.seven.rawValue:
+        case DataEnum.toCenter.rawValue:
                         let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
                         vc?.transitioningDelegate = self
-                          transitionOption = DataEnum.seven
+                          transitionOption = DataEnum.toCenter
                         vc?.modalPresentationStyle = .fullScreen
                         present(vc!, animated: true, completion: nil)
                         break
+            
+            
+        case DataEnum.disappear.rawValue:
+                                   let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
+                                   vc?.transitioningDelegate = self
+                                     transitionOption = DataEnum.disappear
+                                   vc?.modalPresentationStyle = .fullScreen
+                                   present(vc!, animated: true, completion: nil)
+                                   break
             
     
         default:
@@ -124,11 +147,17 @@ class FirstVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         var animator: UIViewControllerAnimatedTransitioning!
         
         switch transitionOption {
-        case DataEnum.six:
+        case DataEnum.fromCell:
+            animator = AnimatorFromCell(cellFrame: cellFrame)
+            break
+        case DataEnum.fromCenter:
             animator = AnimatorFromCenter()
             break
-        case DataEnum.seven:
+        case DataEnum.toCenter:
             animator = AnimatorToCenter()
+            break
+        case DataEnum.disappear:
+            animator = AnimatorDisappear()
             break
         default:
              animator = AnimatorFromCenter()
@@ -141,14 +170,21 @@ class FirstVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
-        var animator: UIViewControllerAnimatedTransitioning!
+        var animator: UIViewControllerAnimatedTransitioning?
                 
             switch transitionOption {
-                case DataEnum.six:
+                
+                case DataEnum.fromCenter:
                     animator = AnimatorFromCenter()
                     break
-                case DataEnum.seven:
+                case DataEnum.toCenter:
                     animator = AnimatorFromCenter()
+                    break
+                case DataEnum.disappear:
+                    animator = AnimatorDisappear()
+                    break
+                case DataEnum.fromCell:
+                    animator = nil
                     break
                 default:
                      animator = AnimatorFromCenter()
