@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pl7-Zy-wtE">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -8,6 +8,100 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--NavigationVC-->
+        <scene sceneID="CJL-iG-wdh">
+            <objects>
+                <viewController storyboardIdentifier="NavigationVC" id="xJh-F6-UWy" customClass="NavigationVC" customModule="CustomTransitionsVCtoVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Atv-ee-D8T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngl-6A-6AW">
+                                <rect key="frame" x="124.66666666666669" y="347.66666666666669" width="165" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="default transition">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="defaultClicked:" destination="xJh-F6-UWy" eventType="touchUpInside" id="kS7-Q4-iJg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttr-gT-tcg">
+                                <rect key="frame" x="155" y="217.66666666666666" width="104" height="44.999999999999972"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                <state key="normal" title="From Top">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="fromTopBtnPressed:" destination="xJh-F6-UWy" eventType="touchUpInside" id="33z-aQ-gJR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzn-Hz-yKh">
+                                <rect key="frame" x="134" y="282.66666666666669" width="146" height="45"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                <state key="normal" title="From Bottom">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="fromButtomBtnPressed:" destination="xJh-F6-UWy" eventType="touchUpInside" id="XTW-sa-l0A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpB-nd-5EZ">
+                                <rect key="frame" x="79" y="87.666666666666671" width="256" height="45.000000000000014"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                <state key="normal" title="From Right with Spring">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="fromRightWithSpringBtnPressed:" destination="xJh-F6-UWy" eventType="touchUpInside" id="9Wy-t3-SZz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EZ-zZ-m72">
+                                <rect key="frame" x="149" y="408.66666666666669" width="116" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="23"/>
+                                <state key="normal" title="Diagonally"/>
+                                <connections>
+                                    <action selector="fromSideBtnPressed:" destination="xJh-F6-UWy" eventType="touchUpInside" id="9Ug-WD-qXu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDN-FT-rrp">
+                                <rect key="frame" x="154.66666666666666" y="152.66666666666666" width="104.99999999999997" height="45"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                <state key="normal" title="From Left">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="FromLeftBtnPressed:" destination="xJh-F6-UWy" eventType="touchUpInside" id="uet-Lx-ELn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31009949693937178" green="0.83124763165645277" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ngl-6A-6AW" firstAttribute="centerY" secondItem="Atv-ee-D8T" secondAttribute="centerY" id="7MP-l7-dTU"/>
+                            <constraint firstItem="PpB-nd-5EZ" firstAttribute="centerX" secondItem="Atv-ee-D8T" secondAttribute="centerX" id="Yda-7F-UXn"/>
+                            <constraint firstItem="Xzn-Hz-yKh" firstAttribute="top" secondItem="ttr-gT-tcg" secondAttribute="bottom" constant="20" id="ZIg-Hg-tZI"/>
+                            <constraint firstItem="ttr-gT-tcg" firstAttribute="top" secondItem="pDN-FT-rrp" secondAttribute="bottom" constant="20" id="hmg-YS-NmT"/>
+                            <constraint firstItem="ttr-gT-tcg" firstAttribute="centerX" secondItem="Atv-ee-D8T" secondAttribute="centerX" id="maR-Kr-pnZ"/>
+                            <constraint firstItem="1EZ-zZ-m72" firstAttribute="centerX" secondItem="Atv-ee-D8T" secondAttribute="centerX" id="nf6-ha-qtc"/>
+                            <constraint firstItem="Ngl-6A-6AW" firstAttribute="top" secondItem="Xzn-Hz-yKh" secondAttribute="bottom" constant="20" id="pfX-oa-dvD"/>
+                            <constraint firstItem="1EZ-zZ-m72" firstAttribute="top" secondItem="Ngl-6A-6AW" secondAttribute="bottom" constant="20" id="rxX-VO-8IT"/>
+                            <constraint firstItem="pDN-FT-rrp" firstAttribute="top" secondItem="PpB-nd-5EZ" secondAttribute="bottom" constant="20" id="t0u-pf-RYy"/>
+                            <constraint firstItem="pDN-FT-rrp" firstAttribute="centerX" secondItem="Atv-ee-D8T" secondAttribute="centerX" id="t6a-3m-hI9"/>
+                            <constraint firstItem="Xzn-Hz-yKh" firstAttribute="centerX" secondItem="Atv-ee-D8T" secondAttribute="centerX" id="vf2-my-B0S"/>
+                            <constraint firstItem="Ngl-6A-6AW" firstAttribute="centerX" secondItem="Atv-ee-D8T" secondAttribute="centerX" id="zQI-HZ-bJn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U61-ZL-soK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cFo-10-UGr"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="firstVC" id="gwF-Vd-Yhg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ipp-gy-cVF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255.07246376811597" y="126.35869565217392"/>
+        </scene>
         <!--FirstVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -17,7 +111,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KfD-Hn-C05">
-                                <rect key="frame" x="20" y="10" width="374" height="716"/>
+                                <rect key="frame" x="20" y="54" width="374" height="672"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="q8q-QL-FeF">
                                     <size key="itemSize" width="115" height="113"/>
@@ -65,13 +159,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jPJ-LR-CFt"/>
                     <connections>
                         <outlet property="collectionView" destination="KfD-Hn-C05" id="A5B-pZ-Qpi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="123.91304347826087"/>
+            <point key="canvasLocation" x="1044.9275362318842" y="123.91304347826087"/>
         </scene>
         <!--SecondVC-->
         <scene sceneID="HKa-xx-KXD">
@@ -108,7 +203,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thp-zU-UJE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="840" y="124"/>
+            <point key="canvasLocation" x="1746.376811594203" y="123.91304347826087"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="we3-BI-MVW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pl7-Zy-wtE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IPw-ar-Va6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xJh-F6-UWy" kind="relationship" relationship="rootViewController" id="yhi-ep-uxe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="idd-39-tzy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-652.17391304347836" y="126.35869565217392"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA13773725027CAC00FFE74E /* AnimatorFromRightToLeftWithSpring.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA13773625027CAC00FFE74E /* AnimatorFromRightToLeftWithSpring.swift */; };
+		AA13773D2502934200FFE74E /* AnimatorFromBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA13773C2502934200FFE74E /* AnimatorFromBottom.swift */; };
+		AA13773F2502942A00FFE74E /* AnimatorFromTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA13773E2502942A00FFE74E /* AnimatorFromTop.swift */; };
+		AA137741250294A000FFE74E /* AnimatorFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA137740250294A000FFE74E /* AnimatorFromLeft.swift */; };
+		AA1377432502958900FFE74E /* FromRightScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1377422502958900FFE74E /* FromRightScale.swift */; };
 		AA33F93624FFEDF300B434DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33F93524FFEDF300B434DD /* AppDelegate.swift */; };
 		AA33F93824FFEDF300B434DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33F93724FFEDF300B434DD /* SceneDelegate.swift */; };
 		AA33F93A24FFEDF300B434DD /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33F93924FFEDF300B434DD /* FirstVC.swift */; };
@@ -19,11 +24,17 @@
 		AA3B1F8F25011E05000BC0D4 /* AnimatorDisappear.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B1F8E25011E05000BC0D4 /* AnimatorDisappear.swift */; };
 		AA3B1F9125014336000BC0D4 /* AnimatorFromCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B1F9025014336000BC0D4 /* AnimatorFromCell.swift */; };
 		AA3B1F93250266C7000BC0D4 /* AnimatorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B1F92250266C7000BC0D4 /* AnimatorCircle.swift */; };
+		AA3B1F95250275E0000BC0D4 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B1F94250275E0000BC0D4 /* NavigationVC.swift */; };
 		AA78CAD724FFF46F00C7497A /* CollVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78CAD624FFF46F00C7497A /* CollVCCell.swift */; };
 		AA78CAD924FFF60400C7497A /* DataEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78CAD824FFF60400C7497A /* DataEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA13773625027CAC00FFE74E /* AnimatorFromRightToLeftWithSpring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorFromRightToLeftWithSpring.swift; sourceTree = "<group>"; };
+		AA13773C2502934200FFE74E /* AnimatorFromBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorFromBottom.swift; sourceTree = "<group>"; };
+		AA13773E2502942A00FFE74E /* AnimatorFromTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorFromTop.swift; sourceTree = "<group>"; };
+		AA137740250294A000FFE74E /* AnimatorFromLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorFromLeft.swift; sourceTree = "<group>"; };
+		AA1377422502958900FFE74E /* FromRightScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromRightScale.swift; sourceTree = "<group>"; };
 		AA33F93224FFEDF300B434DD /* CustomTransitionsVCtoVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTransitionsVCtoVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA33F93524FFEDF300B434DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA33F93724FFEDF300B434DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +49,7 @@
 		AA3B1F8E25011E05000BC0D4 /* AnimatorDisappear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorDisappear.swift; sourceTree = "<group>"; };
 		AA3B1F9025014336000BC0D4 /* AnimatorFromCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorFromCell.swift; sourceTree = "<group>"; };
 		AA3B1F92250266C7000BC0D4 /* AnimatorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorCircle.swift; sourceTree = "<group>"; };
+		AA3B1F94250275E0000BC0D4 /* NavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
 		AA78CAD624FFF46F00C7497A /* CollVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollVCCell.swift; sourceTree = "<group>"; };
 		AA78CAD824FFF60400C7497A /* DataEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,6 +65,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA13773A2502892D00FFE74E /* ModalTransition */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B1F92250266C7000BC0D4 /* AnimatorCircle.swift */,
+				AA3B1F9025014336000BC0D4 /* AnimatorFromCell.swift */,
+				AA3B1F8E25011E05000BC0D4 /* AnimatorDisappear.swift */,
+				AA3B1F8925010D8B000BC0D4 /* AnimatorFromCenter.swift */,
+				AA3B1F8B25011245000BC0D4 /* AnimatorToCenter.swift */,
+			);
+			path = ModalTransition;
+			sourceTree = "<group>";
+		};
+		AA13773B2502894400FFE74E /* NavigationTransition */ = {
+			isa = PBXGroup;
+			children = (
+				AA13773625027CAC00FFE74E /* AnimatorFromRightToLeftWithSpring.swift */,
+				AA13773C2502934200FFE74E /* AnimatorFromBottom.swift */,
+				AA13773E2502942A00FFE74E /* AnimatorFromTop.swift */,
+				AA137740250294A000FFE74E /* AnimatorFromLeft.swift */,
+				AA1377422502958900FFE74E /* FromRightScale.swift */,
+			);
+			path = NavigationTransition;
+			sourceTree = "<group>";
+		};
 		AA33F92924FFEDF300B434DD = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +127,7 @@
 			children = (
 				AA33F93924FFEDF300B434DD /* FirstVC.swift */,
 				AA33F94924FFEF2A00B434DD /* SecondVC.swift */,
+				AA3B1F94250275E0000BC0D4 /* NavigationVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -98,11 +135,8 @@
 		AA3B1F8D250117F9000BC0D4 /* Animators */ = {
 			isa = PBXGroup;
 			children = (
-				AA3B1F8B25011245000BC0D4 /* AnimatorToCenter.swift */,
-				AA3B1F8925010D8B000BC0D4 /* AnimatorFromCenter.swift */,
-				AA3B1F8E25011E05000BC0D4 /* AnimatorDisappear.swift */,
-				AA3B1F9025014336000BC0D4 /* AnimatorFromCell.swift */,
-				AA3B1F92250266C7000BC0D4 /* AnimatorCircle.swift */,
+				AA13773B2502894400FFE74E /* NavigationTransition */,
+				AA13773A2502892D00FFE74E /* ModalTransition */,
 			);
 			path = Animators;
 			sourceTree = "<group>";
@@ -182,9 +216,15 @@
 				AA78CAD724FFF46F00C7497A /* CollVCCell.swift in Sources */,
 				AA33F93A24FFEDF300B434DD /* FirstVC.swift in Sources */,
 				AA33F93624FFEDF300B434DD /* AppDelegate.swift in Sources */,
+				AA1377432502958900FFE74E /* FromRightScale.swift in Sources */,
 				AA33F94A24FFEF2A00B434DD /* SecondVC.swift in Sources */,
 				AA3B1F9125014336000BC0D4 /* AnimatorFromCell.swift in Sources */,
+				AA3B1F95250275E0000BC0D4 /* NavigationVC.swift in Sources */,
+				AA13773725027CAC00FFE74E /* AnimatorFromRightToLeftWithSpring.swift in Sources */,
 				AA78CAD924FFF60400C7497A /* DataEnum.swift in Sources */,
+				AA13773D2502934200FFE74E /* AnimatorFromBottom.swift in Sources */,
+				AA13773F2502942A00FFE74E /* AnimatorFromTop.swift in Sources */,
+				AA137741250294A000FFE74E /* AnimatorFromLeft.swift in Sources */,
 				AA3B1F8A25010D8B000BC0D4 /* AnimatorFromCenter.swift in Sources */,
 				AA3B1F93250266C7000BC0D4 /* AnimatorCircle.swift in Sources */,
 				AA3B1F8F25011E05000BC0D4 /* AnimatorDisappear.swift in Sources */,
