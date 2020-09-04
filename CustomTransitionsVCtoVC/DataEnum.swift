@@ -21,9 +21,10 @@ enum DataEnum : String {
     case toCenter = "to center"
     case disappear = "disappear"
     case fromCell = "from Cell"
+    case circle = "circle"
     
     
-    static let data = [flipHorizontal.rawValue, crossDissolve.rawValue, fromCenter.rawValue, toCenter.rawValue, disappear.rawValue, modal_default.rawValue, fullScreen.rawValue, coverVertical.rawValue, fromCell.rawValue]
+    static let data = [flipHorizontal.rawValue, crossDissolve.rawValue,circle.rawValue, fromCenter.rawValue, toCenter.rawValue, disappear.rawValue, modal_default.rawValue, fullScreen.rawValue, coverVertical.rawValue, fromCell.rawValue]
     
     
     

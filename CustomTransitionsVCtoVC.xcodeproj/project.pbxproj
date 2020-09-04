@@ -18,6 +18,7 @@
 		AA3B1F8C25011245000BC0D4 /* AnimatorToCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B1F8B25011245000BC0D4 /* AnimatorToCenter.swift */; };
 		AA3B1F8F25011E05000BC0D4 /* AnimatorDisappear.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B1F8E25011E05000BC0D4 /* AnimatorDisappear.swift */; };
 		AA3B1F9125014336000BC0D4 /* AnimatorFromCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B1F9025014336000BC0D4 /* AnimatorFromCell.swift */; };
+		AA3B1F93250266C7000BC0D4 /* AnimatorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B1F92250266C7000BC0D4 /* AnimatorCircle.swift */; };
 		AA78CAD724FFF46F00C7497A /* CollVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78CAD624FFF46F00C7497A /* CollVCCell.swift */; };
 		AA78CAD924FFF60400C7497A /* DataEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78CAD824FFF60400C7497A /* DataEnum.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		AA3B1F8B25011245000BC0D4 /* AnimatorToCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorToCenter.swift; sourceTree = "<group>"; };
 		AA3B1F8E25011E05000BC0D4 /* AnimatorDisappear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorDisappear.swift; sourceTree = "<group>"; };
 		AA3B1F9025014336000BC0D4 /* AnimatorFromCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorFromCell.swift; sourceTree = "<group>"; };
+		AA3B1F92250266C7000BC0D4 /* AnimatorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorCircle.swift; sourceTree = "<group>"; };
 		AA78CAD624FFF46F00C7497A /* CollVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollVCCell.swift; sourceTree = "<group>"; };
 		AA78CAD824FFF60400C7497A /* DataEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 				AA3B1F8925010D8B000BC0D4 /* AnimatorFromCenter.swift */,
 				AA3B1F8E25011E05000BC0D4 /* AnimatorDisappear.swift */,
 				AA3B1F9025014336000BC0D4 /* AnimatorFromCell.swift */,
+				AA3B1F92250266C7000BC0D4 /* AnimatorCircle.swift */,
 			);
 			path = Animators;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				AA3B1F9125014336000BC0D4 /* AnimatorFromCell.swift in Sources */,
 				AA78CAD924FFF60400C7497A /* DataEnum.swift in Sources */,
 				AA3B1F8A25010D8B000BC0D4 /* AnimatorFromCenter.swift in Sources */,
+				AA3B1F93250266C7000BC0D4 /* AnimatorCircle.swift in Sources */,
 				AA3B1F8F25011E05000BC0D4 /* AnimatorDisappear.swift in Sources */,
 				AA33F93824FFEDF300B434DD /* SceneDelegate.swift in Sources */,
 			);

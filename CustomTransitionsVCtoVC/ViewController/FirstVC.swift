@@ -60,8 +60,7 @@ class FirstVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
             cellFrame = frame
         }
         
-        
-        print(cellFrame)
+
      let option = DataEnum.data[indexPath.row]
        
   
@@ -124,6 +123,15 @@ class FirstVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
                         break
             
             
+            case DataEnum.circle.rawValue:
+            let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
+            vc?.transitioningDelegate = self
+            transitionOption = DataEnum.circle
+            vc?.modalPresentationStyle = .fullScreen
+            present(vc!, animated: true, completion: nil)
+            break
+            
+            
         case DataEnum.disappear.rawValue:
                                    let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
                                    vc?.transitioningDelegate = self
@@ -149,6 +157,9 @@ class FirstVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         switch transitionOption {
         case DataEnum.fromCell:
             animator = AnimatorFromCell(cellFrame: cellFrame)
+            break
+        case DataEnum.circle:
+            animator = AnimatorCircle()
             break
         case DataEnum.fromCenter:
             animator = AnimatorFromCenter()
