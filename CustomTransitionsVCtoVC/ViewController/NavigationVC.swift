@@ -8,13 +8,14 @@
 
 import UIKit
 
-enum FromSide {
+enum FromWhere {
     case right
     case left
     case bottom
     case top
     case standard
     case side
+    case button
     
 }
 
@@ -22,10 +23,20 @@ enum FromSide {
 
 class NavigationVC: UIViewController {
     
-    var from = FromSide.standard
+    var from = FromWhere.standard
+    var btnFrame = CGRect(x: 0, y:0, width: 0, height: 0)
 
+    @IBOutlet weak var fromButtonBtn: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        fromButtonBtn.layer.cornerRadius = 20
+        fromButtonBtn.layer.borderColor = UIColor.white.cgColor
+        fromButtonBtn.layer.borderWidth = 3.0
+        btnFrame = fromButtonBtn.frame
         
          navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
          navigationController!.navigationBar.shadowImage = UIImage()
@@ -36,42 +47,46 @@ class NavigationVC: UIViewController {
     }
     
     
+    @IBAction func fromButtonClicked(_ sender: Any) {
+        from = FromWhere.button
+        performSegue(withIdentifier: "firstVC", sender: self)
+    }
     
     
     
     @IBAction func defaultClicked(_ sender: Any) {
-          from = FromSide.standard
+          from = FromWhere.standard
         performSegue(withIdentifier: "firstVC", sender: self)
     }
     
     
     
     @IBAction func fromRightWithSpringBtnPressed(_ sender: Any) {
-        from = FromSide.right
+        from = FromWhere.right
          performSegue(withIdentifier: "firstVC", sender: self)
         
     }
     
     
     @IBAction func FromLeftBtnPressed(_ sender: Any) {
-        from = FromSide.left
+        from = FromWhere.left
          performSegue(withIdentifier: "firstVC", sender: self)
     }
     
     @IBAction func fromTopBtnPressed(_ sender: Any) {
-        from = FromSide.top
+        from = FromWhere.top
         performSegue(withIdentifier: "firstVC", sender: self)
     }
     
     @IBAction func fromButtomBtnPressed(_ sender: Any) {
-        from = FromSide.bottom
+        from = FromWhere.bottom
          performSegue(withIdentifier: "firstVC", sender: self)
     }
     
     
     
     @IBAction func fromSideBtnPressed(_ sender: Any) {
-        from = FromSide.side
+        from = FromWhere.side
         performSegue(withIdentifier: "firstVC", sender: self)
     }
     
@@ -88,6 +103,8 @@ extension NavigationVC: UINavigationControllerDelegate {
         case .push:
             
             switch from {
+            case .button:
+                return AnimatorFromButtonFrame(buttonFrame: btnFrame)
             case .side:
                 return AnimatorFromRightScale()
             case .standard:

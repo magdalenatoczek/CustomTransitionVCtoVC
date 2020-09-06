@@ -27,6 +27,7 @@
 		AA3B1F95250275E0000BC0D4 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B1F94250275E0000BC0D4 /* NavigationVC.swift */; };
 		AA78CAD724FFF46F00C7497A /* CollVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78CAD624FFF46F00C7497A /* CollVCCell.swift */; };
 		AA78CAD924FFF60400C7497A /* DataEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78CAD824FFF60400C7497A /* DataEnum.swift */; };
+		AA8CA1C82504FDEE00EDD45B /* AnimatorFromButtonFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CA1C72504FDEE00EDD45B /* AnimatorFromButtonFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		AA3B1F94250275E0000BC0D4 /* NavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
 		AA78CAD624FFF46F00C7497A /* CollVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollVCCell.swift; sourceTree = "<group>"; };
 		AA78CAD824FFF60400C7497A /* DataEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEnum.swift; sourceTree = "<group>"; };
+		AA8CA1C72504FDEE00EDD45B /* AnimatorFromButtonFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorFromButtonFrame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				AA13773E2502942A00FFE74E /* AnimatorFromTop.swift */,
 				AA137740250294A000FFE74E /* AnimatorFromLeft.swift */,
 				AA1377422502958900FFE74E /* FromRightScale.swift */,
+				AA8CA1C72504FDEE00EDD45B /* AnimatorFromButtonFrame.swift */,
 			);
 			path = NavigationTransition;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				AA3B1F8C25011245000BC0D4 /* AnimatorToCenter.swift in Sources */,
 				AA78CAD724FFF46F00C7497A /* CollVCCell.swift in Sources */,
+				AA8CA1C82504FDEE00EDD45B /* AnimatorFromButtonFrame.swift in Sources */,
 				AA33F93A24FFEDF300B434DD /* FirstVC.swift in Sources */,
 				AA33F93624FFEDF300B434DD /* AppDelegate.swift in Sources */,
 				AA1377432502958900FFE74E /* FromRightScale.swift in Sources */,

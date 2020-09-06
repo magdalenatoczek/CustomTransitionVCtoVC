@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pl7-Zy-wtE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pl7-Zy-wtE">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -74,14 +74,30 @@
                                     <action selector="FromLeftBtnPressed:" destination="xJh-F6-UWy" eventType="touchUpInside" id="uet-Lx-ELn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rK3-QV-vI7">
+                                <rect key="frame" x="147" y="492.66666666666674" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="6Jj-zR-SWQ"/>
+                                    <constraint firstAttribute="width" constant="120" id="PX3-Ej-TLm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="from Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="fromButtonClicked:" destination="xJh-F6-UWy" eventType="touchUpInside" id="LMI-9Q-979"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.31009949693937178" green="0.83124763165645277" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ngl-6A-6AW" firstAttribute="centerY" secondItem="Atv-ee-D8T" secondAttribute="centerY" id="7MP-l7-dTU"/>
+                            <constraint firstItem="rK3-QV-vI7" firstAttribute="top" secondItem="1EZ-zZ-m72" secondAttribute="bottom" constant="40" id="Lpu-Tc-GQ1"/>
                             <constraint firstItem="PpB-nd-5EZ" firstAttribute="centerX" secondItem="Atv-ee-D8T" secondAttribute="centerX" id="Yda-7F-UXn"/>
                             <constraint firstItem="Xzn-Hz-yKh" firstAttribute="top" secondItem="ttr-gT-tcg" secondAttribute="bottom" constant="20" id="ZIg-Hg-tZI"/>
                             <constraint firstItem="ttr-gT-tcg" firstAttribute="top" secondItem="pDN-FT-rrp" secondAttribute="bottom" constant="20" id="hmg-YS-NmT"/>
+                            <constraint firstItem="rK3-QV-vI7" firstAttribute="centerX" secondItem="Atv-ee-D8T" secondAttribute="centerX" id="iYM-jB-LiH"/>
                             <constraint firstItem="ttr-gT-tcg" firstAttribute="centerX" secondItem="Atv-ee-D8T" secondAttribute="centerX" id="maR-Kr-pnZ"/>
                             <constraint firstItem="1EZ-zZ-m72" firstAttribute="centerX" secondItem="Atv-ee-D8T" secondAttribute="centerX" id="nf6-ha-qtc"/>
                             <constraint firstItem="Ngl-6A-6AW" firstAttribute="top" secondItem="Xzn-Hz-yKh" secondAttribute="bottom" constant="20" id="pfX-oa-dvD"/>
@@ -95,6 +111,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cFo-10-UGr"/>
                     <connections>
+                        <outlet property="fromButtonBtn" destination="rK3-QV-vI7" id="0tB-dy-CLh"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="firstVC" id="gwF-Vd-Yhg"/>
                     </connections>
                 </viewController>

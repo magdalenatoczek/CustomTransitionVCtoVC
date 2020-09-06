@@ -44,7 +44,7 @@ class FirstVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         cell.cellLabel.text = DataEnum.data[indexPath.row]
         
         cell.layer.borderColor = UIColor.white.cgColor
-         cell.layer.borderWidth = 2
+        cell.layer.borderWidth = 2
         cell.layer.cornerRadius = 20
         
         cell.layer.frame.size = CGSize(width: (self.view.frame.size.width - 80)/3, height: (self.view.frame.size.width - 80)/3)
