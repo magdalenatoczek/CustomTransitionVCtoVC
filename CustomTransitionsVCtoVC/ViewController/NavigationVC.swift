@@ -49,45 +49,45 @@ class NavigationVC: UIViewController {
     
     @IBAction func fromButtonClicked(_ sender: Any) {
         from = FromWhere.button
-        performSegue(withIdentifier: "firstVC", sender: self)
+        performSegue(withIdentifier: "thirdVC", sender: self)
     }
     
     
     
     @IBAction func defaultClicked(_ sender: Any) {
           from = FromWhere.standard
-        performSegue(withIdentifier: "firstVC", sender: self)
+        performSegue(withIdentifier: "thirdVC", sender: self)
     }
     
     
     
     @IBAction func fromRightWithSpringBtnPressed(_ sender: Any) {
         from = FromWhere.right
-         performSegue(withIdentifier: "firstVC", sender: self)
+         performSegue(withIdentifier: "thirdVC", sender: self)
         
     }
     
     
     @IBAction func FromLeftBtnPressed(_ sender: Any) {
         from = FromWhere.left
-         performSegue(withIdentifier: "firstVC", sender: self)
+         performSegue(withIdentifier: "thirdVC", sender: self)
     }
     
     @IBAction func fromTopBtnPressed(_ sender: Any) {
         from = FromWhere.top
-        performSegue(withIdentifier: "firstVC", sender: self)
+        performSegue(withIdentifier: "thirdVC", sender: self)
     }
     
     @IBAction func fromButtomBtnPressed(_ sender: Any) {
         from = FromWhere.bottom
-         performSegue(withIdentifier: "firstVC", sender: self)
+         performSegue(withIdentifier: "thirdVC", sender: self)
     }
     
     
     
     @IBAction func fromSideBtnPressed(_ sender: Any) {
         from = FromWhere.side
-        performSegue(withIdentifier: "firstVC", sender: self)
+        performSegue(withIdentifier: "thirdVC", sender: self)
     }
     
     
