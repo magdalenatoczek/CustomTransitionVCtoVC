@@ -91,6 +91,8 @@ class SecondVC: UIViewController {
         case .began:
             
              let translation = recognizer.translation(in: myView)
+             
+             
              if translation.x > 0{
                 animateSwape(direction: .right)
              } else {
@@ -99,11 +101,14 @@ class SecondVC: UIViewController {
           
           animator.pauseAnimation()
           animationProgress = animator.fractionComplete
+            print(animationProgress)
 
         case .changed:
             
             let translation = recognizer.translation(in: myView)
             var fraction = translation.x/(view.frame.width)
+            
+        
             
             if currentSwipeDirection == .left {
                 fraction *= -1
@@ -111,6 +116,26 @@ class SecondVC: UIViewController {
             }
             
             animator.fractionComplete = fraction + animationProgress
+            
+            
+            //pivot
+            
+            if animator.fractionComplete == CGFloat(0){
+                
+                if currentSwipeDirection == .left && translation.x > 0 {
+                    
+                    refreshAnimator(direction: .right)
+                    
+                    
+                } else if currentSwipeDirection == .right && translation.x < 0 {
+                      refreshAnimator(direction: .left)
+                    
+                }
+                
+                
+            }
+            
+            
             
 //            print("velocityX \(velocity.x)")
 //            print("velocityY \(velocity.y)")
@@ -122,7 +147,7 @@ class SecondVC: UIViewController {
             
             let velocity = recognizer.velocity(in: myView)
             
-            if animator.fractionComplete > 0.6 || velocity.x > 100 || velocity.x < 100 {
+            if animator.fractionComplete > 0.6 || velocity.x > 100 || velocity.x < -100 {
                 animator.addCompletion { (position) in
                     self.myView.removeFromSuperview()
                     self.addNewView()
@@ -162,6 +187,24 @@ class SecondVC: UIViewController {
         
         
         animator.startAnimation()
+    }
+    
+    
+    func refreshAnimator(direction: SwipeDirection){
+         currentSwipeDirection = direction
+         animator.stopAnimation(true)
+        
+         animator = UIViewPropertyAnimator(duration: 1, curve: .easeIn, animations: {
+                  
+                  let transform = CGAffineTransform(translationX: direction == .right ? self.view.frame.width : -self.view.frame.width , y: 0)
+                  self.myView.transform = CGAffineTransform(rotationAngle: direction == .right ? CGFloat(Double.pi/8) : -CGFloat(Double.pi/8)) .concatenating(transform)
+                  
+              })
+        
+         animator.startAnimation()
+         animator.pauseAnimation()
+        animationProgress = animator.fractionComplete
+        
     }
     
     
