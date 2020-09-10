@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondVC: UIViewController {
+class SwipeCardVC: UIViewController {
 
     @IBOutlet weak var goBackBtn: UIButton!
     
@@ -101,7 +101,7 @@ class SecondVC: UIViewController {
           
           animator.pauseAnimation()
           animationProgress = animator.fractionComplete
-            print(animationProgress)
+         
 
         case .changed:
             

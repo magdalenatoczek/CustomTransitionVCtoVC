@@ -14,11 +14,11 @@
 		AA1377432502958900FFE74E /* FromRightScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1377422502958900FFE74E /* FromRightScale.swift */; };
 		AA33F93624FFEDF300B434DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33F93524FFEDF300B434DD /* AppDelegate.swift */; };
 		AA33F93824FFEDF300B434DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33F93724FFEDF300B434DD /* SceneDelegate.swift */; };
-		AA33F93A24FFEDF300B434DD /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33F93924FFEDF300B434DD /* FirstVC.swift */; };
+		AA33F93A24FFEDF300B434DD /* ModalTransitionsColectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33F93924FFEDF300B434DD /* ModalTransitionsColectionVC.swift */; };
 		AA33F93D24FFEDF300B434DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA33F93B24FFEDF300B434DD /* Main.storyboard */; };
 		AA33F93F24FFEDF500B434DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA33F93E24FFEDF500B434DD /* Assets.xcassets */; };
 		AA33F94224FFEDF500B434DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA33F94024FFEDF500B434DD /* LaunchScreen.storyboard */; };
-		AA33F94A24FFEF2A00B434DD /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33F94924FFEF2A00B434DD /* SecondVC.swift */; };
+		AA33F94A24FFEF2A00B434DD /* SwipeCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33F94924FFEF2A00B434DD /* SwipeCardVC.swift */; };
 		AA3B1F8A25010D8B000BC0D4 /* AnimatorFromCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B1F8925010D8B000BC0D4 /* AnimatorFromCenter.swift */; };
 		AA3B1F8C25011245000BC0D4 /* AnimatorToCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B1F8B25011245000BC0D4 /* AnimatorToCenter.swift */; };
 		AA3B1F8F25011E05000BC0D4 /* AnimatorDisappear.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B1F8E25011E05000BC0D4 /* AnimatorDisappear.swift */; };
@@ -28,7 +28,7 @@
 		AA78CAD724FFF46F00C7497A /* CollVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78CAD624FFF46F00C7497A /* CollVCCell.swift */; };
 		AA78CAD924FFF60400C7497A /* DataEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78CAD824FFF60400C7497A /* DataEnum.swift */; };
 		AA8CA1C82504FDEE00EDD45B /* AnimatorFromButtonFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CA1C72504FDEE00EDD45B /* AnimatorFromButtonFrame.swift */; };
-		AA8CA1CA2505245E00EDD45B /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CA1C92505245E00EDD45B /* ThirdVC.swift */; };
+		AA8CA1CA2505245E00EDD45B /* CatchingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CA1C92505245E00EDD45B /* CatchingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,12 +40,12 @@
 		AA33F93224FFEDF300B434DD /* CustomTransitionsVCtoVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTransitionsVCtoVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA33F93524FFEDF300B434DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA33F93724FFEDF300B434DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA33F93924FFEDF300B434DD /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		AA33F93924FFEDF300B434DD /* ModalTransitionsColectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransitionsColectionVC.swift; sourceTree = "<group>"; };
 		AA33F93C24FFEDF300B434DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA33F93E24FFEDF500B434DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA33F94124FFEDF500B434DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA33F94324FFEDF500B434DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA33F94924FFEF2A00B434DD /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		AA33F94924FFEF2A00B434DD /* SwipeCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardVC.swift; sourceTree = "<group>"; };
 		AA3B1F8925010D8B000BC0D4 /* AnimatorFromCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorFromCenter.swift; sourceTree = "<group>"; };
 		AA3B1F8B25011245000BC0D4 /* AnimatorToCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorToCenter.swift; sourceTree = "<group>"; };
 		AA3B1F8E25011E05000BC0D4 /* AnimatorDisappear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorDisappear.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		AA78CAD624FFF46F00C7497A /* CollVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollVCCell.swift; sourceTree = "<group>"; };
 		AA78CAD824FFF60400C7497A /* DataEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEnum.swift; sourceTree = "<group>"; };
 		AA8CA1C72504FDEE00EDD45B /* AnimatorFromButtonFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorFromButtonFrame.swift; sourceTree = "<group>"; };
-		AA8CA1C92505245E00EDD45B /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
+		AA8CA1C92505245E00EDD45B /* CatchingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				AA3B1F94250275E0000BC0D4 /* NavigationVC.swift */,
-				AA33F93924FFEDF300B434DD /* FirstVC.swift */,
-				AA33F94924FFEF2A00B434DD /* SecondVC.swift */,
-				AA8CA1C92505245E00EDD45B /* ThirdVC.swift */,
+				AA33F93924FFEDF300B434DD /* ModalTransitionsColectionVC.swift */,
+				AA33F94924FFEF2A00B434DD /* SwipeCardVC.swift */,
+				AA8CA1C92505245E00EDD45B /* CatchingVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -220,12 +220,12 @@
 			files = (
 				AA3B1F8C25011245000BC0D4 /* AnimatorToCenter.swift in Sources */,
 				AA78CAD724FFF46F00C7497A /* CollVCCell.swift in Sources */,
-				AA8CA1CA2505245E00EDD45B /* ThirdVC.swift in Sources */,
+				AA8CA1CA2505245E00EDD45B /* CatchingVC.swift in Sources */,
 				AA8CA1C82504FDEE00EDD45B /* AnimatorFromButtonFrame.swift in Sources */,
-				AA33F93A24FFEDF300B434DD /* FirstVC.swift in Sources */,
+				AA33F93A24FFEDF300B434DD /* ModalTransitionsColectionVC.swift in Sources */,
 				AA33F93624FFEDF300B434DD /* AppDelegate.swift in Sources */,
 				AA1377432502958900FFE74E /* FromRightScale.swift in Sources */,
-				AA33F94A24FFEF2A00B434DD /* SecondVC.swift in Sources */,
+				AA33F94A24FFEF2A00B434DD /* SwipeCardVC.swift in Sources */,
 				AA3B1F9125014336000BC0D4 /* AnimatorFromCell.swift in Sources */,
 				AA3B1F95250275E0000BC0D4 /* NavigationVC.swift in Sources */,
 				AA13773725027CAC00FFE74E /* AnimatorFromRightToLeftWithSpring.swift in Sources */,

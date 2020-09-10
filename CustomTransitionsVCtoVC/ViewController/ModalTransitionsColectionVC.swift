@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIViewControllerTransitioningDelegate {
+class ModalTransitionsColectionVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIViewControllerTransitioningDelegate {
    
     
     @IBOutlet weak var collectionView: UICollectionView!
