@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="abd-Sb-jcI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="NavigationVC" id="xJh-F6-UWy" customClass="NavigationVC" customModule="CustomTransitionsVCtoVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Atv-ee-D8T">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngl-6A-6AW">
-                                <rect key="frame" x="217.5" y="279.5" width="165" height="41"/>
+                                <rect key="frame" x="124.5" y="427.5" width="165" height="41"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                 <state key="normal" title="default transition">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -26,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttr-gT-tcg">
-                                <rect key="frame" x="248" y="149.5" width="104" height="45"/>
+                                <rect key="frame" x="155" y="297.5" width="104" height="45"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
                                 <state key="normal" title="From Top">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -36,7 +37,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzn-Hz-yKh">
-                                <rect key="frame" x="227" y="214.5" width="146" height="45"/>
+                                <rect key="frame" x="134" y="362.5" width="146" height="45"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
                                 <state key="normal" title="From Bottom">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,7 +47,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpB-nd-5EZ">
-                                <rect key="frame" x="172" y="19.5" width="256" height="45"/>
+                                <rect key="frame" x="79" y="167.5" width="256" height="45"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
                                 <state key="normal" title="From Right with Spring">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,7 +57,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EZ-zZ-m72">
-                                <rect key="frame" x="242" y="340.5" width="116" height="44"/>
+                                <rect key="frame" x="149" y="488.5" width="116" height="44"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="23"/>
                                 <state key="normal" title="Diagonally"/>
                                 <connections>
@@ -64,7 +65,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDN-FT-rrp">
-                                <rect key="frame" x="247.5" y="84.5" width="105" height="45"/>
+                                <rect key="frame" x="154.5" y="232.5" width="105" height="45"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
                                 <state key="normal" title="From Left">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,7 +75,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rK3-QV-vI7">
-                                <rect key="frame" x="240" y="424.5" width="120" height="120"/>
+                                <rect key="frame" x="147" y="572.5" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="6Jj-zR-SWQ"/>
                                     <constraint firstAttribute="width" constant="120" id="PX3-Ej-TLm"/>
@@ -123,11 +124,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ModalTransitionsColectionVC" customModule="CustomTransitionsVCtoVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KfD-Hn-C05">
-                                <rect key="frame" x="20" y="10" width="560" height="531"/>
+                                <rect key="frame" x="20" y="54" width="374" height="749"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="q8q-QL-FeF">
                                     <size key="itemSize" width="115" height="113"/>
@@ -193,11 +194,11 @@
             <objects>
                 <viewController storyboardIdentifier="SecondVC" id="NtO-1P-THF" customClass="SwipeCardVC" customModule="CustomTransitionsVCtoVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eqB-u5-ehJ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CD8-V0-nPl">
-                                <rect key="frame" x="20" y="20" width="120" height="45"/>
+                                <rect key="frame" x="20" y="64" width="120" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="4Td-CH-YQh"/>
                                 </constraints>
@@ -233,19 +234,75 @@
             <objects>
                 <viewController storyboardIdentifier="ThirdVC" id="C0i-Xb-fB0" customClass="CatchingVC" customModule="CustomTransitionsVCtoVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="knB-Be-0Nc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fly" translatesAutoresizingMaskIntoConstraints="NO" id="wI5-Jo-KVM">
+                                <rect key="frame" x="20" y="693" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="357-9T-cvG"/>
+                                    <constraint firstAttribute="height" constant="100" id="Uqd-l9-vtY"/>
+                                </constraints>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5QT-NB-gdF">
+                                <rect key="frame" x="0.0" y="158" width="414" height="675"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ss2-sn-n2e">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="675"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KO4-7o-Oak">
+                                            <rect key="frame" x="0.0" y="0.0" width="174" height="547"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Vlr-4q-Hov">
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="547"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="regular"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fly" translatesAutoresizingMaskIntoConstraints="NO" id="3vh-od-6OI">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="350" id="doh-hp-QNV"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="3vh-od-6OI" secondAttribute="trailing" id="dUu-ud-roz"/>
+                                        <constraint firstItem="3vh-od-6OI" firstAttribute="leading" secondItem="ss2-sn-n2e" secondAttribute="leading" id="gQW-WA-8z9"/>
+                                        <constraint firstItem="3vh-od-6OI" firstAttribute="top" secondItem="ss2-sn-n2e" secondAttribute="top" id="tcP-Yc-ge9"/>
+                                    </constraints>
+                                </view>
+                                <color key="tintColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
                         <color key="backgroundColor" red="0.22389534883655185" green="0.67125602834676257" blue="0.60648829134578541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wI5-Jo-KVM" firstAttribute="leading" secondItem="y4H-DE-68e" secondAttribute="leading" constant="20" id="Ntg-5W-qzA"/>
+                            <constraint firstItem="y4H-DE-68e" firstAttribute="bottom" secondItem="wI5-Jo-KVM" secondAttribute="bottom" constant="20" id="PMI-hq-Mla"/>
+                            <constraint firstItem="5QT-NB-gdF" firstAttribute="top" secondItem="y4H-DE-68e" secondAttribute="top" constant="70" id="TZV-zB-xwS"/>
+                            <constraint firstItem="5QT-NB-gdF" firstAttribute="leading" secondItem="y4H-DE-68e" secondAttribute="leading" id="hLg-FF-Q1d"/>
+                            <constraint firstItem="5QT-NB-gdF" firstAttribute="trailing" secondItem="y4H-DE-68e" secondAttribute="trailing" id="olJ-7N-MXb"/>
+                            <constraint firstItem="5QT-NB-gdF" firstAttribute="bottom" secondItem="y4H-DE-68e" secondAttribute="bottom" constant="20" id="qoM-f0-Tr7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="y4H-DE-68e"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="UnF-Ex-gM9">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="OJs-jD-Juy"/>
+                    <connections>
+                        <outlet property="blurView" destination="5QT-NB-gdF" id="b4J-94-IJ1"/>
+                        <outlet property="largeImage" destination="3vh-od-6OI" id="JXF-Go-tVo"/>
+                        <outlet property="thumbanilImageView" destination="wI5-Jo-KVM" id="647-BT-nzb"/>
+                        <outlet property="topConstaint" destination="TZV-zB-xwS" id="24V-Cq-cf0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4b6-eY-gqx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2626" y="126"/>
+            <point key="canvasLocation" x="2624.6376811594205" y="125.89285714285714"/>
         </scene>
         <!--Navigation Transition-->
         <scene sceneID="we3-BI-MVW">
@@ -257,7 +314,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IPw-ar-Va6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -297,4 +354,7 @@
             <point key="canvasLocation" x="255.07246376811597" y="-221.73913043478262"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fly" width="320" height="213.5"/>
+    </resources>
 </document>

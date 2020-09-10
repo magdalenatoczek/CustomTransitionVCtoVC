@@ -66,7 +66,7 @@ class ModalTransitionsColectionVC: UIViewController, UICollectionViewDelegate, U
   
         switch option {
         case DataEnum.fromCell.rawValue:
-                               let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
+                               let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SwipeCardVC
                                transitionOption = DataEnum.fromCell
                                vc?.transitioningDelegate = self
                                vc?.modalPresentationStyle = .fullScreen
@@ -75,18 +75,18 @@ class ModalTransitionsColectionVC: UIViewController, UICollectionViewDelegate, U
        
         case DataEnum.modal_default.rawValue:
             
-                    let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
+                    let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SwipeCardVC
                     transitionOption = DataEnum.modal_default
                     present(vc!, animated: true, completion: nil)
                     break
         case DataEnum.fullScreen.rawValue:
-                    let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
+                    let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SwipeCardVC
                     vc?.modalPresentationStyle = .fullScreen
                     transitionOption = DataEnum.fullScreen
                     present(vc!, animated: true, completion: nil)
                     break
         case DataEnum.coverVertical.rawValue:
-                    let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
+                    let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SwipeCardVC
                     transitionOption = DataEnum.coverVertical
                     vc?.modalPresentationStyle = .fullScreen
                     vc?.modalTransitionStyle = .coverVertical
@@ -94,20 +94,20 @@ class ModalTransitionsColectionVC: UIViewController, UICollectionViewDelegate, U
                    
                     break
         case DataEnum.flipHorizontal.rawValue:
-                     let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
+                     let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SwipeCardVC
                      vc?.modalPresentationStyle = .fullScreen
                      transitionOption = DataEnum.flipHorizontal
                      vc?.modalTransitionStyle = .flipHorizontal
                      present(vc!, animated: true, completion: nil)
                      break
         case DataEnum.crossDissolve.rawValue:
-                      let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
+                      let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SwipeCardVC
                       vc?.modalTransitionStyle = .crossDissolve
                     transitionOption = DataEnum.crossDissolve
                       present(vc!, animated: true, completion: nil)
                       break
         case DataEnum.fromCenter.rawValue:
-                        let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
+                        let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SwipeCardVC
                         vc?.transitioningDelegate = self
                           transitionOption = DataEnum.fromCenter
                         vc?.modalPresentationStyle = .fullScreen
@@ -115,7 +115,7 @@ class ModalTransitionsColectionVC: UIViewController, UICollectionViewDelegate, U
                                break
         
         case DataEnum.toCenter.rawValue:
-                        let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
+                        let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SwipeCardVC
                         vc?.transitioningDelegate = self
                           transitionOption = DataEnum.toCenter
                         vc?.modalPresentationStyle = .fullScreen
@@ -124,7 +124,7 @@ class ModalTransitionsColectionVC: UIViewController, UICollectionViewDelegate, U
             
             
             case DataEnum.circle.rawValue:
-            let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
+            let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SwipeCardVC
             vc?.transitioningDelegate = self
             transitionOption = DataEnum.circle
             vc?.modalPresentationStyle = .fullScreen
@@ -133,7 +133,7 @@ class ModalTransitionsColectionVC: UIViewController, UICollectionViewDelegate, U
             
             
         case DataEnum.disappear.rawValue:
-                                   let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
+                                   let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SwipeCardVC
                                    vc?.transitioningDelegate = self
                                      transitionOption = DataEnum.disappear
                                    vc?.modalPresentationStyle = .fullScreen
