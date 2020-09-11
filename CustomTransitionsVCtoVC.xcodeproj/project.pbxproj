@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0E2033250BDD0F00BFCA8D /* AnimatorTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E2032250BDD0F00BFCA8D /* AnimatorTransition.swift */; };
+		AA0E2035250BDE8100BFCA8D /* AnimatorTransitionSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E2034250BDE8100BFCA8D /* AnimatorTransitionSecond.swift */; };
 		AA13773725027CAC00FFE74E /* AnimatorFromRightToLeftWithSpring.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA13773625027CAC00FFE74E /* AnimatorFromRightToLeftWithSpring.swift */; };
 		AA13773D2502934200FFE74E /* AnimatorFromBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA13773C2502934200FFE74E /* AnimatorFromBottom.swift */; };
 		AA13773F2502942A00FFE74E /* AnimatorFromTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA13773E2502942A00FFE74E /* AnimatorFromTop.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA0E2032250BDD0F00BFCA8D /* AnimatorTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorTransition.swift; sourceTree = "<group>"; };
+		AA0E2034250BDE8100BFCA8D /* AnimatorTransitionSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorTransitionSecond.swift; sourceTree = "<group>"; };
 		AA13773625027CAC00FFE74E /* AnimatorFromRightToLeftWithSpring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorFromRightToLeftWithSpring.swift; sourceTree = "<group>"; };
 		AA13773C2502934200FFE74E /* AnimatorFromBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorFromBottom.swift; sourceTree = "<group>"; };
 		AA13773E2502942A00FFE74E /* AnimatorFromTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorFromTop.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				AA3B1F8E25011E05000BC0D4 /* AnimatorDisappear.swift */,
 				AA3B1F8925010D8B000BC0D4 /* AnimatorFromCenter.swift */,
 				AA3B1F8B25011245000BC0D4 /* AnimatorToCenter.swift */,
+				AA0E2032250BDD0F00BFCA8D /* AnimatorTransition.swift */,
+				AA0E2034250BDE8100BFCA8D /* AnimatorTransitionSecond.swift */,
 			);
 			path = ModalTransition;
 			sourceTree = "<group>";
@@ -230,9 +236,11 @@
 				AA33F93624FFEDF300B434DD /* AppDelegate.swift in Sources */,
 				AA1377432502958900FFE74E /* FromRightScale.swift in Sources */,
 				AA33F94A24FFEF2A00B434DD /* SwipeCardVC.swift in Sources */,
+				AA0E2033250BDD0F00BFCA8D /* AnimatorTransition.swift in Sources */,
 				AA3B1F9125014336000BC0D4 /* AnimatorFromCell.swift in Sources */,
 				AA3B1F95250275E0000BC0D4 /* NavigationVC.swift in Sources */,
 				AA13773725027CAC00FFE74E /* AnimatorFromRightToLeftWithSpring.swift in Sources */,
+				AA0E2035250BDE8100BFCA8D /* AnimatorTransitionSecond.swift in Sources */,
 				AA78CAD924FFF60400C7497A /* DataEnum.swift in Sources */,
 				AA13773D2502934200FFE74E /* AnimatorFromBottom.swift in Sources */,
 				AA13773F2502942A00FFE74E /* AnimatorFromTop.swift in Sources */,

@@ -186,7 +186,7 @@ class ModalTransitionsColectionVC: UIViewController, UICollectionViewDelegate, U
             switch transitionOption {
                 
                 case DataEnum.fromCenter:
-                    animator = AnimatorFromCenter()
+                    animator = AnimatorTransition()
                     break
                 case DataEnum.toCenter:
                     animator = AnimatorFromCenter()
@@ -195,7 +195,7 @@ class ModalTransitionsColectionVC: UIViewController, UICollectionViewDelegate, U
                     animator = AnimatorDisappear()
                     break
                 case DataEnum.fromCell:
-                    animator = nil
+                    animator = AnimatorTransitionSecond()
                     break
                 default:
                      animator = AnimatorFromCenter()
