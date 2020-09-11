@@ -28,7 +28,7 @@ class CatchingVC: UIViewController {
     
     var viewStatus = ViewStatus.close
     var animator = UIViewPropertyAnimator()
-    
+    var animationProgress: CGFloat = 0.0
     var constantForConstaint = CGFloat(0)
     
     
@@ -82,17 +82,44 @@ class CatchingVC: UIViewController {
                 animate(viewStatus: ViewStatus.open)
             }
             
-            
+           animator.pauseAnimation()
+            animationProgress = animator.fractionComplete
             
             break
         case .changed:
             
+            let translation = recognizer.translation(in: view)
+            var fraction = translation.y/view.frame.height
+
+
+                   if viewStatus == .open {
+                       fraction *= -1
+
+                   }
+            
+            
+            if viewStatus == .open && translation.y > 0 {
+                refreshAnimator(viewStatus: .close)
+                
+                
+            } else if viewStatus == .close && translation.y < 0 {
+                 refreshAnimator(viewStatus: .open)
+                
+            }
+            
+            animator.fractionComplete = fraction + animationProgress
+          
             
             
             break
             
         case .ended:
-         break
+            
+     
+            animator.continueAnimation(withTimingParameters: nil, durationFactor: 0)
+            
+              
+        
             
         default:
             break
@@ -105,6 +132,10 @@ class CatchingVC: UIViewController {
     
     
     func animate(viewStatus: ViewStatus){
+        
+        if animator.isRunning { return}
+   
+        
         
         self.viewStatus = viewStatus
         
@@ -120,9 +151,39 @@ class CatchingVC: UIViewController {
         })
         
         animator.startAnimation()
-        
+    
+     
         
     }
+    
+    
+    
+    func refreshAnimator(viewStatus: ViewStatus){
+        self.viewStatus = viewStatus
+         animator.stopAnimation(true)
+        
+        
+        self.viewStatus = viewStatus
+         
+         animator = UIViewPropertyAnimator(duration: 1, curve: .easeIn, animations: {
+             if viewStatus == .open{
+                 self.topConstaint.constant = self.constantForConstaint
+                  self.view.layoutIfNeeded()
+             }else if viewStatus == .close{
+                 self.topConstaint.constant = self.view.frame.height
+                  self.view.layoutIfNeeded()
+             }
+        
+         })
+      
+         animator.startAnimation()
+         animator.pauseAnimation()
+        animationProgress = animator.fractionComplete
+        
+    }
+    
+    
+    
     
 
 
