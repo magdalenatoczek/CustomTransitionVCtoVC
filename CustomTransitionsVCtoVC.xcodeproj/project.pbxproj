@@ -29,6 +29,7 @@
 		AA78CAD924FFF60400C7497A /* DataEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78CAD824FFF60400C7497A /* DataEnum.swift */; };
 		AA8CA1C82504FDEE00EDD45B /* AnimatorFromButtonFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CA1C72504FDEE00EDD45B /* AnimatorFromButtonFrame.swift */; };
 		AA8CA1CA2505245E00EDD45B /* CatchingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CA1C92505245E00EDD45B /* CatchingVC.swift */; };
+		AAE0FC92250BD29300CA85C8 /* tabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0FC91250BD29300CA85C8 /* tabBarVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		AA78CAD824FFF60400C7497A /* DataEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEnum.swift; sourceTree = "<group>"; };
 		AA8CA1C72504FDEE00EDD45B /* AnimatorFromButtonFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorFromButtonFrame.swift; sourceTree = "<group>"; };
 		AA8CA1C92505245E00EDD45B /* CatchingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchingVC.swift; sourceTree = "<group>"; };
+		AAE0FC91250BD29300CA85C8 /* tabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				AA33F93924FFEDF300B434DD /* ModalTransitionsColectionVC.swift */,
 				AA33F94924FFEF2A00B434DD /* SwipeCardVC.swift */,
 				AA8CA1C92505245E00EDD45B /* CatchingVC.swift */,
+				AAE0FC91250BD29300CA85C8 /* tabBarVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			files = (
 				AA3B1F8C25011245000BC0D4 /* AnimatorToCenter.swift in Sources */,
 				AA78CAD724FFF46F00C7497A /* CollVCCell.swift in Sources */,
+				AAE0FC92250BD29300CA85C8 /* tabBarVC.swift in Sources */,
 				AA8CA1CA2505245E00EDD45B /* CatchingVC.swift in Sources */,
 				AA8CA1C82504FDEE00EDD45B /* AnimatorFromButtonFrame.swift in Sources */,
 				AA33F93A24FFEDF300B434DD /* ModalTransitionsColectionVC.swift in Sources */,
