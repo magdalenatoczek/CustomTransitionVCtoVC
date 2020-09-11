@@ -71,10 +71,6 @@ class CatchingVC: UIViewController {
         case .began:
             
             let translation = recognizer.translation(in: view)
-            
-            
-            print(translation.y)
-            
             if viewStatus == ViewStatus.open && translation.y > 0{
                 
                 animate(viewStatus: ViewStatus.close)
@@ -147,8 +143,23 @@ class CatchingVC: UIViewController {
                 self.topConstaint.constant = self.view.frame.height
                  self.view.layoutIfNeeded()
             }
-       
+
         })
+
+//        animator = UIViewPropertyAnimator(duration: 1, dampingRatio: 1.0, animations: {
+//                   if viewStatus == .open{
+//                       self.topConstaint.constant = self.constantForConstaint
+//                        self.view.layoutIfNeeded()
+//                   }else if viewStatus == .close{
+//                       self.topConstaint.constant = self.view.frame.height
+//                        self.view.layoutIfNeeded()
+//                   }
+//
+//               })
+//
+        
+        
+        
         
         animator.startAnimation()
     
@@ -173,8 +184,23 @@ class CatchingVC: UIViewController {
                  self.topConstaint.constant = self.view.frame.height
                   self.view.layoutIfNeeded()
              }
-        
+
          })
+        
+//        animator = UIViewPropertyAnimator(duration: 1, dampingRatio: 1.0, animations: {
+//                    if viewStatus == .open{
+//                        self.topConstaint.constant = self.constantForConstaint
+//                         self.view.layoutIfNeeded()
+//                    }else if viewStatus == .close{
+//                        self.topConstaint.constant = self.view.frame.height
+//                         self.view.layoutIfNeeded()
+//                    }
+//               
+//                })
+//        
+        
+        
+        
       
          animator.startAnimation()
          animator.pauseAnimation()
